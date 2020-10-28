@@ -11,7 +11,31 @@
 </head>
 <body>
   
- 
+  <div class="container">
+    <h2 class="text-black-50 display-4 my-1 p-2 text-center bg-info rounded-sm">
+      Dollar , euro i tagdali
+    </h2>
+    <form class="d-flex flex-column align-items-center w-100" action="https://echo.htmlacademy.ru">
+      <div class="row justify-content-between w-100 align-items-center">
+        <input name="name" autocomplete="off" spellcheck="false" placeholder="Baribir $ maydalashga kelgansan (rostini ayt hech kimga aytmayman :)) )" class="form-control w-50" type="number">
+        <select required name="rasul" class="mx-2" id="birnima">
+          <option class="text-uppercase" disabled value="none">Qaysi turidan bor</option>
+          <option class="text-uppercase" value="10334">USD</option>
+          <option class="text-uppercase" value="12130">EURO</option>
+          <option class="text-uppercase" value="1548.13">CNY</option>
+          <option class="text-uppercase" value="133.5">RUB</option>
+          <option class="text-uppercase" value="33984.9">KD</option>
+          <option class="text-uppercase" value="2770.72">SAR</option>
+          <option class="text-uppercase" value="13310">GBP</option>
+        </select>   
+        
+        <p class="text-success text-center h2 flex-grow-1"><span class="value-of-exchange">0</span> so'm</p>
+      </div>
+
+      <button class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+  </div>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
