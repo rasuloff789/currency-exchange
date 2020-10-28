@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>55-dars. Bootstrap. container va boshqa umumiy masalalar</title>
+  <title>Valyuta counter Qo'rqma olib ketishmaydi</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
@@ -15,10 +15,10 @@
     <h2 class="text-black-50 display-4 my-1 p-2 text-center bg-info rounded-sm">
       Dollar , euro i tagdali
     </h2>
-    <form class="d-flex flex-column align-items-center w-100" action="https://echo.htmlacademy.ru">
+    <form class="exchange-form d-flex mx-3 flex-column align-items-center w-100" action="https://echo.htmlacademy.ru">
       <div class="row justify-content-between w-100 align-items-center">
-        <input name="name" autocomplete="off" spellcheck="false" placeholder="Baribir $ maydalashga kelgansan (rostini ayt hech kimga aytmayman :)) )" class="form-control w-50" type="number">
-        <select required name="rasul" class="mx-2" id="birnima">
+        <input name="number-of-exchange" autocomplete="off" spellcheck="false" placeholder="Baribir $ maydalashga kelgansan (rostini ayt hech kimga aytmayman :)) )" class="number-of-exchange form-control w-50 flex-shrink-0" type="number">
+        <select required name="rasul" class="currency-type mx-2" id="birnima">
           <option class="text-uppercase" disabled value="none">Qaysi turidan bor</option>
           <option class="text-uppercase" value="10334">USD</option>
           <option class="text-uppercase" value="12130">EURO</option>
@@ -29,11 +29,11 @@
           <option class="text-uppercase" value="13310">GBP</option>
         </select>   
         
-        <p class="text-success text-center h2 flex-grow-1"><span class="value-of-exchange">0</span> so'm</p>
+        <p class="text-minus text-success text-center h2 my-3 flex-grow-1"><span class="value-of-exchange">0</span> so'm</p>
       </div>
-
-      <button class="btn btn-success" type="submit">Submit</button>
-
+      
+      <button class="submit-btn btn btn-success" type="submit">Submit</button>
+      
     </form>
   </div>
   <script src="js/jquery-3.5.1.min.js"></script>
