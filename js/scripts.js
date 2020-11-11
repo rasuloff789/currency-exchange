@@ -9,12 +9,11 @@ submitBtn.addEventListener('click' , function(evt){
   evt.preventDefault();
   var currencyValue = parseFloat(document.querySelector('.currency-type').value.trim() , 10);
   var exchangeSumm = parseFloat(numberExchange.value.trim() , 10);
-  if(exchangeSumm.textContent = ""){
-    textNot.classList.add('d-block');
-    textMinus.classList.remove('d-block');
+  if(exchangeSumm.textContent === ""){
+    textMinus.textContent = "trallalala";
+    alert('dsdjnfsnd')
     numberExchange.classList.add('is-invalid');
     result.textContent = "0";
-    return;
   }
   
   if ( currencyValue === 0 ){
