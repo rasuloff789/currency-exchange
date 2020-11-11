@@ -3,7 +3,7 @@ var result = exchangeForm.querySelector('.value-of-exchange');
 var submitBtn = exchangeForm.querySelector('.submit-btn');
 var numberExchange = exchangeForm.querySelector('.number-of-exchange');
 var textMinus = document.querySelector('.text-minus');
-var textNot = document.querySelector('.text-not-number');
+var textNotNumber = document.querySelector('.text-not-number');
 
 submitBtn.addEventListener('click' , function(evt){
   evt.preventDefault();
